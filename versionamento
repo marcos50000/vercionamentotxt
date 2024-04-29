@@ -34,3 +34,28 @@ Este comando ativa o ambiente virtual, e você verá o nome do ambiente virtual 
 
 Instalar flask 
 para instalar o flask voce deve ir ao terminal e dar o seguinte comando: pip install flask
+
+Passo 1: Criar um Repositório Remoto
+No GitHub ou em outro serviço de hospedagem, crie um novo repositório remoto.
+Copie o URL do repositório remoto que você acabou de criar.
+Passo 2: Configurar o Git Remote Localmente
+Abra o terminal ou prompt de comando.
+Navegue até o diretório do seu projeto Git local.
+Execute o seguinte comando para adicionar o repositório remoto:
+git remote add origin <URL_do_repositório_remoto>
+
+Substitua <URL_do_repositório_remoto> pelo URL que você copiou anteriormente.
+Passo 3: Verificar a Configuração do Git Remote
+Para verificar se o repositório remoto foi configurado corretamente, execute o comando:
+git remote -v
+
+Isso mostrará a URL do repositório remoto.
+Passo 4: Enviar as Alterações para o Repositório Remoto
+Após fazer as alterações no seu projeto local, adicione e confirme as mudanças:
+git add .
+git commit -m "Mensagem do commit"
+
+Em seguida, envie as alterações para o repositório remoto:
+git push -u origin master
+
+Isso enviará as alterações para o branch master do repositório remoto.
